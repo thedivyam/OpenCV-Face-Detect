@@ -2,7 +2,7 @@ import cv2
 #importing the library
 
 #uploading the harcascade file
-face = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+face = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
 
 #reading the image
 img = cv2.imread("image.jpg")
